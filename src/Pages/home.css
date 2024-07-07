@@ -1,0 +1,221 @@
+.navBar{
+    position: fixed;
+    bottom: 20px;
+}
+.navBase{
+    width: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    border-radius: 20px;
+}
+.Intro{
+  min-height:100vh;
+}
+.navItem{
+    margin: 10px;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.navItem-mob{
+    margin: 10px;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.m-0{
+    margin: 0;
+}
+
+.pd-10{
+    padding: 10px !important;
+}
+
+.z1{
+    z-index: 1;
+}
+.white{
+    color: white;
+}
+.black{
+    color: black;
+}
+
+.flex-center{
+  padding: 10px;
+}
+.center{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.intro_image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 140vh;
+}
+
+.row{
+  margin: 0;
+}
+#AboutMe,#Experience,#leader,#Projects,#Footer{
+  z-index: 1;
+}
+.title{
+        width: 100%;
+      text-decoration: underline;
+      text-decoration-thickness: 2px; /* Adjust thickness */
+      text-decoration-color: rgb(38, 121, 105);
+      text-underline-offset: 10px;
+}
+.horizontal-list {
+    padding: 0;
+    margin: 0;
+    margin: 0px 20px;
+    display: flex; /* Use flexbox to display items in a row */
+  }
+  
+  .horizontal-list li {
+    margin-right: 40px; /* Space between items */
+  }
+  
+  .horizontal-list li:last-child {
+    margin-right: 0; /* Remove space after the last item */
+  }
+
+.w90{
+    width: 90vw;
+}
+.pl-10{
+  padding: 0px;
+  padding-left: 10px;
+}
+.pr-10{
+  padding: 0px;
+  padding-right: 10px;
+}
+@media screen and (min-width: 1200px) {
+    .xxl-text {
+      font-size: 7rem;
+      color: white;
+      text-align: center;
+    }
+    .xl-text{
+      font-size: 4rem;
+      color: white;
+      text-align: center;
+    }
+  }
+  
+  
+  @media screen and (max-width: 1200px) {
+    .xxl-text {
+        font-size: 6.5rem;
+        color: white;
+        text-align: center;
+    }
+    .xl-text{
+      font-size: 3rem;
+      color: white;
+      text-align: center;
+    }
+  }
+  
+  
+  @media screen and (max-width: 900px) {
+    .xxl-text {
+        font-size: 5.4rem;
+        color: white;
+        text-align: center;
+    }
+    .xl-text{
+      font-size: 2.5rem;
+      color: white;
+      text-align: center;
+    }
+  }
+  
+  
+  @media screen and (max-width: 800px) {
+    .xxl-text {
+        font-size: 5rem;
+        color: white;
+        text-align: center;
+    }
+    .xl-text{
+      font-size: 2rem;
+      color: white;
+      text-align: center;
+    }
+    ul{
+        flex-wrap: wrap;
+    }
+    .image{
+        width: 300px !important;
+    }
+  }
+  
+  
+  @media screen and (max-width: 700px) {
+    .xxl-text {
+        font-size: 4.4rem;
+        color: white;
+        text-align: center;
+    }
+    .xl-text{
+      font-size: 2rem;
+      color: white;
+      text-align: center;
+    }
+    .image{
+        width: 250px !important;
+    }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .xxl-text {
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+    }
+    .xl-text{
+      font-size: 2rem;
+      color: white;
+      text-align: center;
+    }
+    .image{
+        width: 200px !important;
+    }
+  }
+  
+  
+  @media screen and (max-width: 500px) {
+    .xxl-text {
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+    }
+    .xl-text{
+      font-size: 2rem;
+      color: white;
+      text-align: center;
+    }
+    .image{
+        width: 150px !important;
+    }
+  }
