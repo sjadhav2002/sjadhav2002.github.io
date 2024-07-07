@@ -36,7 +36,7 @@ const Parallax: React.FC<ParallaxDiv> = ({ sentences }) => {
     <div id='Home' className="Intro" style={{position:'relative'}}>
                     <img className='intro_image' style={{transform: `translateY(${background}px)`, zIndex:'0'}} src="bg.jpg" alt="" />
                     <div style={{position:'relative',zIndex:'1', width: '100%', height: '75vh', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                        <h1 className="xxl-text"> <span className='xl-text'>Hi, this is</span> <br />Shubham Jadhav</h1>
+                        <h1 className="xxl-text"> <span className='xl-text'>Hi, I am</span> <br />Shubham Jadhav</h1>
                         <Typewriter sentences={sentences} />
                     </div>
                     <div style={{position:'relative',zIndex:'1'}}>

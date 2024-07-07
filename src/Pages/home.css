@@ -219,3 +219,38 @@
         width: 150px !important;
     }
   }
+
+  @media screen and (max-width: 772px) {
+    .navBar{
+      position: fixed;
+      top: 20px;
+      left: 0px;
+  }
+  .intro_image{
+    width: fit-content;
+    height: 125vh;
+  }
+  .Intro{
+    overflow-x: clip;
+  }
+  .pl-10,.pr-10{
+    padding: 0;
+  }
+  }
+
+  body::-webkit-scrollbar {
+    width: 6px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 4px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 4px;
+  }

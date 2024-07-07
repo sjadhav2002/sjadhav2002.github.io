@@ -116,11 +116,10 @@ const Home: React.FC = () =>{
                 <div id="AboutMe" style={{ backgroundColor: 'rgb(40,40,40)', height:'100vh', position:'relative' }}>
                     <Row className="w90" style={{margin:'20px 10px', height:'100%'}}>
                         <Col className="center" md={4} sm={12}>
-                            {/* <img src="shubham.png" style={{width:'80%'}} alt="" /> */}
                             <img src="shubham.jpg" className="image" style={{width:'80%', borderRadius:'300px'}} alt="" />
                         </Col>
                         <Col style={{alignItems:'flex-start'}} className="center" md={8} sm={12}>
-                            <h1 className="white">About Me</h1>
+                            <h1 className="white title" style={{textAlign:'center'}}>About Me</h1>
                             <p className="white">I am Shubham Jadhav, a recent graduate from MIT World Peace University (MIT WPU) in 2024. I aspire to be a full stack developer, with a solid foundation in both front-end and back-end technologies. I have hands-on experience with React and Angular for front-end development, and Django for back-end development. My passion for technology is matched by my love for reading books and traveling to new places. Throughout my academic and professional journey, I have successfully completed a variety of projects related to web development, IoT, and machine learning. These experiences have allowed me to apply theoretical knowledge to practical, real-world scenarios. </p>
                         </Col>
                     </Row>
@@ -136,7 +135,7 @@ const Home: React.FC = () =>{
                                     <img src="MIT.png"  style={{width:'100%'}} alt="" />
                                 </Col>
                                 <Col style={isMobile?{display:'flex', alignItems:'center', justifyItems:'center',flexDirection:'column'}:{}} md={10} sm={12}>
-                                    <h2>MIT World Peace University</h2>
+                                    <h3>MIT World Peace University</h3>
                                     <p>
                                         <span style={{fontStyle:'italic'}}>Bachelor of Technology in Computer Engineering | 2020-2024</span><br />
                                         CGPA: 9.13
@@ -157,7 +156,7 @@ const Home: React.FC = () =>{
                             {experiences.map((company,index)=>(
                                 <Row key={index} style={{margin:'20px 0px'}}>
                                 <Col>
-                                    <h2>{company.Name}</h2>
+                                    <h3>{company.Name}</h3>
                                     <p>
                                         <span style={{fontStyle:'italic'}}>{company.Position} | {company.Period} </span>
                                           
@@ -184,7 +183,7 @@ const Home: React.FC = () =>{
                         <Col style={{alignItems:'flex-start'}} md={8} sm={12}>
                             <Row style={{margin:'20px 0px'}}>
                                 <Col>
-                                    <h2>Formula Student Team</h2>
+                                    <h3>Formula Student Team</h3>
                                     <p>
                                         <span style={{fontStyle:'italic'}}>Acceleracers Electric 2020-2024</span>
                                     </p>
@@ -222,7 +221,7 @@ const Home: React.FC = () =>{
                             {projects.map((project,index)=>(
                                     <Row key={index} style={{margin:'20px 0px'}}>
                                     <Col>
-                                        <h2>{project.Name}</h2>
+                                        <h3>{project.Name}</h3>
                                         <p>{project.Description}</p>
                                         <h6>Skills:</h6>
                                         <ul className="horizontal-list">

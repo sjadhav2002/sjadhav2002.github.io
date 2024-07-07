@@ -6,7 +6,7 @@ import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import CorporateFareIcon from '@mui/icons-material/CorporateFare';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import MenuIcon from '@mui/icons-material/Menu';
-
+import SchoolIcon from '@mui/icons-material/School';
 interface NavBarProps {
     scroll: (to: string) => void;
   }
@@ -37,10 +37,10 @@ interface NavBarProps {
                             <PersonIcon className="white"/>
                             <p className="m-0 white" style={{width:'max-content'}}>About Me</p>
                         </div>
-                        {/* <div onClick={()=> scroll("Education")} className="navItem">
+                        <div onClick={()=> scroll("Education")} className="navItem">
                             <SchoolIcon className="white"/>
                             <p className="m-0 white">Education</p>
-                        </div> */}
+                        </div>
                         <div onClick={()=> scroll("Experience")} className="navItem">
                             <CorporateFareIcon className="white"/>
                             <p className="m-0 white">Experience</p>
@@ -60,27 +60,27 @@ interface NavBarProps {
                     <button onClick={toggleMenu} style={{border:'none', background:'black'}}> <MenuIcon className="white"/> </button>
                     {openMenu&&(
                         <div style={{width:'100vw', height:'fit-content', display:'flex', flexDirection:'column', alignItems:'center',backgroundColor:'black'}}>
-                            <div onClick={()=>{toggleMenu();"Home"}} className="navItem-mob">
+                            <div onClick={()=>{toggleMenu();scroll("Home")}} className="navItem-mob">
                                 <HomeIcon className="white"/>
                                 <p className="m-0 white">&nbsp;Home</p>
                             </div>
-                            <div onClick={()=>{toggleMenu();"AboutMe"}} className="navItem-mob">
+                            <div onClick={()=>{toggleMenu();scroll("AboutMe")}} className="navItem-mob">
                                 <PersonIcon className="white"/>
                                 <p className="m-0 white" style={{width:'max-content'}}> &nbsp;About Me</p>
                             </div>
-                            {/* <div onClick={()=>{toggleMenu();"Education"}} className="navItem-mob">
+                            <div onClick={()=>{toggleMenu();scroll("Education")}} className="navItem-mob">
                                 <SchoolIcon className="white"/>
                                 <p className="m-0 white">&nbsp;Education</p>
-                            </div> */}
-                            <div onClick={()=>{toggleMenu();"Experience"}} className="navItem-mob">
+                            </div>
+                            <div onClick={()=>{toggleMenu();scroll("Experience")}} className="navItem-mob">
                                 <CorporateFareIcon className="white"/>
                                 <p className="m-0 white">&nbsp;Experience</p>
                             </div>
-                            <div onClick={()=>{toggleMenu();"Projects"}} className="navItem-mob">
+                            <div onClick={()=>{toggleMenu();scroll("Projects")}} className="navItem-mob">
                                 <LightbulbIcon className="white" />
                                 <p className="m-0 white">&nbsp;Projects</p>
                             </div>
-                            <div onClick={()=>{toggleMenu();"Contact"}} className="navItem-mob">
+                            <div onClick={()=>{toggleMenu();scroll("Contact")}} className="navItem-mob">
                                 <ContactMailIcon className="white" />
                                 <p className="m-0 white" style={{width:'max-content'}}>&nbsp;Contact Me</p>
                             </div>
