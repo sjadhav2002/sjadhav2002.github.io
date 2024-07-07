@@ -3,7 +3,7 @@ import "../Pages/home.css";
 import { Row, Col, Form, Button } from "react-bootstrap";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-const Footer = () => {
+const Footer : React.FC = () => {
     const [mailSent, setmailSent] = useState(false)
     const [formData, setFormData] = useState({
         name: '',
@@ -17,7 +17,7 @@ const Footer = () => {
         setFormData({ ...formData, [name]: value });
     };
 
-    const handleSubmit = async  (e: FormEvent<HTMLFormElement>) => {
+    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         // Handle form submission here
         var data = {
@@ -27,7 +27,7 @@ const Footer = () => {
             "message":formData.message
         }
         var mail_url ="https://script.google.com/macros/s/AKfycbz0Uo4iJbQb_twyX9aiJpmQUuXZBZRILsQhvQze4y_MmEfPZyHbKevPyJVS_1sElk-E/exec"
-        const response = await fetch(mail_url, {
+        fetch(mail_url, {
             method: 'POST',
             mode: 'no-cors',
             headers: {

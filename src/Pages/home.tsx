@@ -1,11 +1,8 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect, useState} from "react";
 import "./home.css"
 import NavBar from './../components/NavBar';
-import Typewriter from './../components/type-writer';
 import { Col, Row } from "react-bootstrap";
-import Divider from '@mui/material/Divider';
 import Footer from './../components/footer';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Preloader from '../components/preloader';
 import Parallax from './../components/intro';
 
@@ -32,6 +29,11 @@ const Home: React.FC = () =>{
     const sentences =[
         "Full Stack Developer",
     ]
+    useEffect(()=>{
+        if(isMobile){
+            setIsMobile(true);
+        }
+    },[])
 
     const url = "https://script.google.com/macros/s/AKfycbzk6FLPpsYWjLYOGjctj3qnn758tVQvXQ6TK2mEJ7qp_kJU0E_dh7925vgtm5CHA3iX/exec"
     function scroll(elementId: string) {

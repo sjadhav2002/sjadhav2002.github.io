@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../Pages/home.css"
 import HomeIcon from '@mui/icons-material/Home';
 import PersonIcon from '@mui/icons-material/Person';
-import SchoolIcon from '@mui/icons-material/School';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import CorporateFareIcon from '@mui/icons-material/CorporateFare';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
@@ -20,6 +19,11 @@ interface NavBarProps {
     const toggleMenu = () => {
         setOpenMenu(!openMenu);
       };
+    useEffect(()=>{
+        if(isMobile){
+            setIsMobile(true);
+        }
+  },[])
 
     return (
         <div className="navBar" style={{zIndex:'9999'}}>
