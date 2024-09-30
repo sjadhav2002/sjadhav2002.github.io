@@ -14,6 +14,7 @@ import Parallax from './../components/intro';
     Skills: string[];
   }
 
+  
   interface Project{
     Name: string;
     Description: string;
